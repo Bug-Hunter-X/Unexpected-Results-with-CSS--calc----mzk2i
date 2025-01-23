@@ -1,0 +1,1 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, it can sometimes produce unexpected results if the operands or operators are not used correctly. For example, using incorrect spacing or missing multiplication operators can result in unexpected calculations. Another common error is using incompatible units within the same `calc()` expression. 
