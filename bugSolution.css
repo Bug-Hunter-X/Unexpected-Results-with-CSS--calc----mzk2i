@@ -1,0 +1,23 @@
+/* Correcting the errors in the calc() function */
+
+/* Correct spacing */
+.element {
+  width: calc(100% - 20px);
+}
+
+/* Adding explicit multiplication */
+.another-element {
+  height: calc(2 * 100px);
+}
+
+/* Correcting incompatible units (using consistent units or converting units) */
+.yet-another-element {
+  margin: calc(100px + 2em); /*Inconsistent units.  Consider using a consistent unit, or do the conversion.*/
+  padding: calc((100px + 20px) /2); /*Avoid implicit multiplication*/
+}
+
+/*More robust example, converting between units*/
+.robust-example {
+  width: calc(50vw - 100px); /*This uses vw and px, which may require conversion based on the current viewport width.  Could need a media query. */
+  height: calc(100px + (20% * 100px)); /*Multiply the percentage before converting to px. */
+}
